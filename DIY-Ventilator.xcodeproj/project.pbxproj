@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30B11A99242722CE008A7AE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B11A98242722CE008A7AE8 /* AppDelegate.swift */; };
+		30B11A9B242722CE008A7AE8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B11A9A242722CE008A7AE8 /* FirstViewController.swift */; };
+		30B11A9D242722CE008A7AE8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B11A9C242722CE008A7AE8 /* SecondViewController.swift */; };
+		30B11AA0242722CE008A7AE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B11A9E242722CE008A7AE8 /* Main.storyboard */; };
+		30B11AA2242722D4008A7AE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30B11AA1242722D4008A7AE8 /* Assets.xcassets */; };
+		30B11AA5242722D4008A7AE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B11AA3242722D4008A7AE8 /* LaunchScreen.storyboard */; };
+		30B11AB0242722D5008A7AE8 /* DIY_VentilatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B11AAF242722D5008A7AE8 /* DIY_VentilatorTests.swift */; };
+		30B11ABB242722D5008A7AE8 /* DIY_VentilatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B11ABA242722D5008A7AE8 /* DIY_VentilatorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30B11AAC242722D5008A7AE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30B11A8D242722CD008A7AE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30B11A94242722CD008A7AE8;
+			remoteInfo = "DIY-Ventilator";
+		};
+		30B11AB7242722D5008A7AE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30B11A8D242722CD008A7AE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30B11A94242722CD008A7AE8;
+			remoteInfo = "DIY-Ventilator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		30B11A95242722CE008A7AE8 /* DIY-Ventilator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DIY-Ventilator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30B11A98242722CE008A7AE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		30B11A9A242722CE008A7AE8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		30B11A9C242722CE008A7AE8 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		30B11A9F242722CE008A7AE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30B11AA1242722D4008A7AE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30B11AA4242722D4008A7AE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30B11AA6242722D4008A7AE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30B11AAB242722D5008A7AE8 /* DIY-VentilatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DIY-VentilatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30B11AAF242722D5008A7AE8 /* DIY_VentilatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIY_VentilatorTests.swift; sourceTree = "<group>"; };
+		30B11AB1242722D5008A7AE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30B11AB6242722D5008A7AE8 /* DIY-VentilatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DIY-VentilatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30B11ABA242722D5008A7AE8 /* DIY_VentilatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIY_VentilatorUITests.swift; sourceTree = "<group>"; };
+		30B11ABC242722D5008A7AE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30B11A92242722CD008A7AE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30B11AA8242722D5008A7AE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30B11AB3242722D5008A7AE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30B11A8C242722CD008A7AE8 = {
+			isa = PBXGroup;
+			children = (
+				30B11A97242722CE008A7AE8 /* DIY-Ventilator */,
+				30B11AAE242722D5008A7AE8 /* DIY-VentilatorTests */,
+				30B11AB9242722D5008A7AE8 /* DIY-VentilatorUITests */,
+				30B11A96242722CE008A7AE8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30B11A96242722CE008A7AE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30B11A95242722CE008A7AE8 /* DIY-Ventilator.app */,
+				30B11AAB242722D5008A7AE8 /* DIY-VentilatorTests.xctest */,
+				30B11AB6242722D5008A7AE8 /* DIY-VentilatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30B11A97242722CE008A7AE8 /* DIY-Ventilator */ = {
+			isa = PBXGroup;
+			children = (
+				30B11A98242722CE008A7AE8 /* AppDelegate.swift */,
+				30B11A9A242722CE008A7AE8 /* FirstViewController.swift */,
+				30B11A9C242722CE008A7AE8 /* SecondViewController.swift */,
+				30B11A9E242722CE008A7AE8 /* Main.storyboard */,
+				30B11AA1242722D4008A7AE8 /* Assets.xcassets */,
+				30B11AA3242722D4008A7AE8 /* LaunchScreen.storyboard */,
+				30B11AA6242722D4008A7AE8 /* Info.plist */,
+			);
+			path = "DIY-Ventilator";
+			sourceTree = "<group>";
+		};
+		30B11AAE242722D5008A7AE8 /* DIY-VentilatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				30B11AAF242722D5008A7AE8 /* DIY_VentilatorTests.swift */,
+				30B11AB1242722D5008A7AE8 /* Info.plist */,
+			);
+			path = "DIY-VentilatorTests";
+			sourceTree = "<group>";
+		};
+		30B11AB9242722D5008A7AE8 /* DIY-VentilatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				30B11ABA242722D5008A7AE8 /* DIY_VentilatorUITests.swift */,
+				30B11ABC242722D5008A7AE8 /* Info.plist */,
+			);
+			path = "DIY-VentilatorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30B11A94242722CD008A7AE8 /* DIY-Ventilator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30B11ABF242722D5008A7AE8 /* Build configuration list for PBXNativeTarget "DIY-Ventilator" */;
+			buildPhases = (
+				30B11A91242722CD008A7AE8 /* Sources */,
+				30B11A92242722CD008A7AE8 /* Frameworks */,
+				30B11A93242722CD008A7AE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DIY-Ventilator";
+			productName = "DIY-Ventilator";
+			productReference = 30B11A95242722CE008A7AE8 /* DIY-Ventilator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		30B11AAA242722D5008A7AE8 /* DIY-VentilatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30B11AC2242722D5008A7AE8 /* Build configuration list for PBXNativeTarget "DIY-VentilatorTests" */;
+			buildPhases = (
+				30B11AA7242722D5008A7AE8 /* Sources */,
+				30B11AA8242722D5008A7AE8 /* Frameworks */,
+				30B11AA9242722D5008A7AE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30B11AAD242722D5008A7AE8 /* PBXTargetDependency */,
+			);
+			name = "DIY-VentilatorTests";
+			productName = "DIY-VentilatorTests";
+			productReference = 30B11AAB242722D5008A7AE8 /* DIY-VentilatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		30B11AB5242722D5008A7AE8 /* DIY-VentilatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30B11AC5242722D5008A7AE8 /* Build configuration list for PBXNativeTarget "DIY-VentilatorUITests" */;
+			buildPhases = (
+				30B11AB2242722D5008A7AE8 /* Sources */,
+				30B11AB3242722D5008A7AE8 /* Frameworks */,
+				30B11AB4242722D5008A7AE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30B11AB8242722D5008A7AE8 /* PBXTargetDependency */,
+			);
+			name = "DIY-VentilatorUITests";
+			productName = "DIY-VentilatorUITests";
+			productReference = 30B11AB6242722D5008A7AE8 /* DIY-VentilatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30B11A8D242722CD008A7AE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Christian Mourad";
+				TargetAttributes = {
+					30B11A94242722CD008A7AE8 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					30B11AAA242722D5008A7AE8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 30B11A94242722CD008A7AE8;
+					};
+					30B11AB5242722D5008A7AE8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 30B11A94242722CD008A7AE8;
+					};
+				};
+			};
+			buildConfigurationList = 30B11A90242722CD008A7AE8 /* Build configuration list for PBXProject "DIY-Ventilator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30B11A8C242722CD008A7AE8;
+			productRefGroup = 30B11A96242722CE008A7AE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30B11A94242722CD008A7AE8 /* DIY-Ventilator */,
+				30B11AAA242722D5008A7AE8 /* DIY-VentilatorTests */,
+				30B11AB5242722D5008A7AE8 /* DIY-VentilatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30B11A93242722CD008A7AE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30B11AA5242722D4008A7AE8 /* LaunchScreen.storyboard in Resources */,
+				30B11AA2242722D4008A7AE8 /* Assets.xcassets in Resources */,
+				30B11AA0242722CE008A7AE8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30B11AA9242722D5008A7AE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30B11AB4242722D5008A7AE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30B11A91242722CD008A7AE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30B11A9D242722CE008A7AE8 /* SecondViewController.swift in Sources */,
+				30B11A99242722CE008A7AE8 /* AppDelegate.swift in Sources */,
+				30B11A9B242722CE008A7AE8 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30B11AA7242722D5008A7AE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30B11AB0242722D5008A7AE8 /* DIY_VentilatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30B11AB2242722D5008A7AE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30B11ABB242722D5008A7AE8 /* DIY_VentilatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30B11AAD242722D5008A7AE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30B11A94242722CD008A7AE8 /* DIY-Ventilator */;
+			targetProxy = 30B11AAC242722D5008A7AE8 /* PBXContainerItemProxy */;
+		};
+		30B11AB8242722D5008A7AE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30B11A94242722CD008A7AE8 /* DIY-Ventilator */;
+			targetProxy = 30B11AB7242722D5008A7AE8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		30B11A9E242722CE008A7AE8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30B11A9F242722CE008A7AE8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		30B11AA3242722D4008A7AE8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30B11AA4242722D4008A7AE8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30B11ABD242722D5008A7AE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		30B11ABE242722D5008A7AE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30B11AC0242722D5008A7AE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "DIY-Ventilator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cymourad.DIY-Ventilator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30B11AC1242722D5008A7AE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "DIY-Ventilator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cymourad.DIY-Ventilator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		30B11AC3242722D5008A7AE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "DIY-VentilatorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cymourad.DIY-VentilatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DIY-Ventilator.app/DIY-Ventilator";
+			};
+			name = Debug;
+		};
+		30B11AC4242722D5008A7AE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "DIY-VentilatorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cymourad.DIY-VentilatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DIY-Ventilator.app/DIY-Ventilator";
+			};
+			name = Release;
+		};
+		30B11AC6242722D5008A7AE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "DIY-VentilatorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cymourad.DIY-VentilatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DIY-Ventilator";
+			};
+			name = Debug;
+		};
+		30B11AC7242722D5008A7AE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "DIY-VentilatorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cymourad.DIY-VentilatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DIY-Ventilator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30B11A90242722CD008A7AE8 /* Build configuration list for PBXProject "DIY-Ventilator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30B11ABD242722D5008A7AE8 /* Debug */,
+				30B11ABE242722D5008A7AE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30B11ABF242722D5008A7AE8 /* Build configuration list for PBXNativeTarget "DIY-Ventilator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30B11AC0242722D5008A7AE8 /* Debug */,
+				30B11AC1242722D5008A7AE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30B11AC2242722D5008A7AE8 /* Build configuration list for PBXNativeTarget "DIY-VentilatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30B11AC3242722D5008A7AE8 /* Debug */,
+				30B11AC4242722D5008A7AE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30B11AC5242722D5008A7AE8 /* Build configuration list for PBXNativeTarget "DIY-VentilatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30B11AC6242722D5008A7AE8 /* Debug */,
+				30B11AC7242722D5008A7AE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30B11A8D242722CD008A7AE8 /* Project object */;
+}

@@ -11,14 +11,15 @@ import UIKit
 class FirstViewController: UIViewController {
     
     // SETTING UP VARIABLES
-    var isConnectedToOxygen = true; //bool indicating whether oxygen tank and Y-piece are connected
-    var isConnectedToHumidifier = true; //bool indicating whether humidiferis connected
+    var isConnectedToOxygen = true //bool indicating whether oxygen tank and Y-piece are connected
+    var FiO2 = 20 // deafult oxygen level is 20% TODO add control for this
+    var isConnectedToHumidifier = true //bool indicating whether humidiferis connected
     
     let modes = ["Bi-PAP", "C-PAP", "Assist"] // the different modes of operation
     var mode = "Bi-PAP" // string indicating the desired mode of operation
     
-    var IPAP = 16 // integer indicating the value of the IPAP
-    var EPAP = 8 // integer indicating the value of the EPAP
+    var PIP = 16 // integer indicating the value of the IPAP
+    var PEEP = 6 // integer indicating the value of the EPAP
     var CPAP =  10 // integer indicating the value of the CPAP
     
     var patientAge = 50 // age in years
@@ -40,6 +41,14 @@ class FirstViewController: UIViewController {
         isConnectedToOxygen = sender.isOn
     }
     
+    // FiO2 %
+    @IBOutlet weak var fio2Label: UILabel!
+
+    @IBAction func fio2Stepper(_ sender: UIStepper) {
+        FiO2 = Int(sender.value) // store new value in FiO2 (to be send over bluetooth)
+        fio2Label.text = String(FiO2) // display new value to user in app
+    }
+    
     // Mode
     @IBAction func modeSegment(_ sender: UISegmentedControl) {
         mode = modes[sender.selectedSegmentIndex]
@@ -49,15 +58,15 @@ class FirstViewController: UIViewController {
     // IPAP
     @IBOutlet weak var IPAPlabel: UILabel!
     @IBAction func IPAPstepper(_ sender: UIStepper) {
-        IPAP = Int(sender.value) // store new value in IPAP (to be send over bluetooth)
-        IPAPlabel.text = String(IPAP) // display new value to user in app
+        PIP = Int(sender.value) // store new value in IPAP (to be send over bluetooth)
+        IPAPlabel.text = String(PIP) // display new value to user in app
     }
     
     // EPAP
     @IBOutlet weak var EPAPlabel: UILabel!
     @IBAction func EPAPstepper(_ sender: UIStepper) {
-        EPAP = Int(sender.value) // store new value in EPAP (to be send over bluetooth)
-        EPAPlabel.text = String(EPAP) // display new value to user in app
+        PEEP = Int(sender.value) // store new value in EPAP (to be send over bluetooth)
+        EPAPlabel.text = String(PEEP) // display new value to user in app
     }
     
     // CPAP
@@ -95,32 +104,61 @@ class FirstViewController: UIViewController {
     
     // Send settings to the ventialtor
     @IBAction func sendSettingsToVentilatorButtonTapped(_ sender: UIButton) {
-        switch mode {
-        case modes[0]: // Bi-PAP
-            // do claculations needed for Bi-PAP
-            // TODO
-            testVar = "Bi-PAP"
-        case modes[1]: //C-PAP
-            // do calculations needed for C-PAP
-            // TODO
-            testVar = "C-PAP"
-        default:
-            // deafault to assist
-            // TODO
-            testVar = "Assist"
+        var settingsString = ""
+        
+        var oxygenStatus = 0
+        if isConnectedToOxygen {
+            oxygenStatus = 1
         }
         
-        // send required data over Bluetooth
-        // TODO
+        var humidifierStatus = 0
+        if isConnectedToHumidifier {
+            humidifierStatus = 1
+        }
         
-        // update label upon success
-        let currentDateTime = Date()
-        let formatter = DateFormatter()
-        formatter.timeStyle = .medium
-        formatter.dateStyle = .none
-        let timeString = formatter.string(from: currentDateTime)
-        testLabel.text =  "Settings sent successfully at " + timeString
+        switch mode {
+        case modes[0]: // Bi-PAP
+            // Construct settings string
+            settingsString = "B" + String(oxygenStatus) + String(FiO2/10) + String(format: "%02d", PIP) + String(format: "%02d", PEEP) + String(humidifierStatus)
+        case modes[1]: //C-PAP
+            // Construct settings string
+            settingsString = "C" + String(oxygenStatus) + String(FiO2/10) + String(format: "%02d", CPAP) + "00" + String(humidifierStatus)
+        default:
+            // Construct settings string
+            settingsString = "A" + String(oxygenStatus) + String(FiO2/10) + "00" + "00" + String(humidifierStatus)
+        }
+        
+        testLabel.text =  "Send following string through app " + settingsString
+        
+        
+        // TODO send required data over Bluetooth
+        // TODO update label upon success as follows
+//        let currentDateTime = Date()
+//        let formatter = DateFormatter()
+//        formatter.timeStyle = .medium
+//        formatter.dateStyle = .none
+//        let timeString = formatter.string(from: currentDateTime)
+//        testLabel.text =  "Settings sent successfully at " + timeString
+        
     }
+    
+    // Test ventilator
+    
+    @IBAction func testVentilaorTapped(_ sender: UIButton) {
+        
+        var oxygenStatus = 0
+        if isConnectedToOxygen {
+            oxygenStatus = 1
+        }
+        
+        var humidifierStatus = 0
+        if isConnectedToHumidifier {
+            humidifierStatus = 1
+        }
+        
+        testLabel.text =  "Send following string through app T" + String(oxygenStatus) + String(FiO2/10) + "00" + "00" + String(humidifierStatus)
+    }
+    
     
     @IBOutlet weak var testLabel: UILabel!
     

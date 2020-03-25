@@ -21,10 +21,10 @@ This string would be composed of a number that contains all the information need
 |   0   | not connected |
 |   1   | connected |
 
-3. few digits for **oxygen control**
-4. few digits for **respiratory rate** timer {only in Bi-PAP mode}
-5. few digits for **IPAP** voltage (or voltage of CPAP pressure)
-6. few digits for **EPAP** voltage
+3. one digit for **oxygen control** (1 for 100% FiO2, 2 for 20%, 3 for 30% --> 9 for 90%)
+4. two digits for **respiratory rate** timer {only in Bi-PAP mode}
+5. two digits for **PIP** (or CPAP pressure)
+6. two digits for **PEEP**
 
 
 ## Bluetooth

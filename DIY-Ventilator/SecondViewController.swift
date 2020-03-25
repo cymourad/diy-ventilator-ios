@@ -19,8 +19,7 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     @IBOutlet weak var tutorialPicker: UIPickerView!
     
     // Picker options
-    let tutorials = ["Welcome to DIY-Ventilator", "COVID-19 and ventilators", "Types of ventilators", "Monitoring the patient", "Assemble the ventilator", "Run ventilator on battery"]
-    let videoTutorials = ["Welcome to DIY-Ventilator", "Assemble the ventilator", "Run ventilator on battery"]
+    let videoTutorials = ["Welcome to DIY-Ventilator", "Assemble the Ventilator (Basic)", "Add an Oxygen Source", "Add a Humidifier", "Test the Ventilator", "Run the Ventilator on Battery"]
     
     // we only have one field to pick
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -29,17 +28,17 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     
     // the items to be displayed in the picker
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return tutorials[row]
+        return videoTutorials[row]
     }
     
     // the number of items in the picker
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return tutorials.count
+        return videoTutorials.count
     }
     
     //
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        selectedVideo = tutorials[row]
+        selectedVideo = videoTutorials[row]
     }
     
     // SETTING AV PLAYER UP
@@ -67,11 +66,9 @@ class SecondViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     }
     
     @IBAction func playButtonTapped(_ sender: Any) {
-        
-        if videoTutorials.contains(selectedVideo) {
-            // trigger the video to play
-            playVideoWithName(name: selectedVideo)
-        } else {} // TODO read the blog entry
+        // trigger the video to play
+        playVideoWithName(name: selectedVideo)
+
     }
     
 }

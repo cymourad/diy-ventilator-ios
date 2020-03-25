@@ -35,3 +35,16 @@ IOS cannot interface with Bluetooth 2.0, BLE must be used.
 Upon further thought, and with school work hitting hard, I would rather generate the control string in the app and ask the user to past this string into a 3rd party app that can connect to the HM-10 Module for now.
 
 A great example is [this HM-10 Module](https://www.amazon.com/DSD-TECH-Bluetooth-iBeacon-Arduino/dp/B06WGZB2N4) that uses the readily-availble and free DSD TECH Bluetooth app (available to both [Android](https://play.google.com/store/apps/details?id=com.reb.dsd_ble&hl=en_CA) and [IOS](https://apps.apple.com/ca/app/dsd-tech-bluetooth/id1441528159) devices).
+
+### Recipe to push change
+1. Save all changes
+2. Open terminal
+3. `cd`
+4. `cd diy-ventilator-ios`
+5. `git status` make sure these are the files you changed
+6. `git add .`
+7. `git commit -m ' describe your change'`
+8. `git push`
+
+
+

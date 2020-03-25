@@ -13,8 +13,6 @@
 		30B11AA0242722CE008A7AE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B11A9E242722CE008A7AE8 /* Main.storyboard */; };
 		30B11AA2242722D4008A7AE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30B11AA1242722D4008A7AE8 /* Assets.xcassets */; };
 		30B11AA5242722D4008A7AE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B11AA3242722D4008A7AE8 /* LaunchScreen.storyboard */; };
-		30B11AB0242722D5008A7AE8 /* DIY_VentilatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B11AAF242722D5008A7AE8 /* DIY_VentilatorTests.swift */; };
-		30B11ABB242722D5008A7AE8 /* DIY_VentilatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B11ABA242722D5008A7AE8 /* DIY_VentilatorUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +42,7 @@
 		30B11AA4242722D4008A7AE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30B11AA6242722D4008A7AE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30B11AAB242722D5008A7AE8 /* DIY-VentilatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DIY-VentilatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		30B11AAF242722D5008A7AE8 /* DIY_VentilatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIY_VentilatorTests.swift; sourceTree = "<group>"; };
-		30B11AB1242722D5008A7AE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30B11AB6242722D5008A7AE8 /* DIY-VentilatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DIY-VentilatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		30B11ABA242722D5008A7AE8 /* DIY_VentilatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIY_VentilatorUITests.swift; sourceTree = "<group>"; };
-		30B11ABC242722D5008A7AE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				30B11A97242722CE008A7AE8 /* DIY-Ventilator */,
-				30B11AAE242722D5008A7AE8 /* DIY-VentilatorTests */,
-				30B11AB9242722D5008A7AE8 /* DIY-VentilatorUITests */,
 				30B11A96242722CE008A7AE8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,24 +100,6 @@
 				30B11AA6242722D4008A7AE8 /* Info.plist */,
 			);
 			path = "DIY-Ventilator";
-			sourceTree = "<group>";
-		};
-		30B11AAE242722D5008A7AE8 /* DIY-VentilatorTests */ = {
-			isa = PBXGroup;
-			children = (
-				30B11AAF242722D5008A7AE8 /* DIY_VentilatorTests.swift */,
-				30B11AB1242722D5008A7AE8 /* Info.plist */,
-			);
-			path = "DIY-VentilatorTests";
-			sourceTree = "<group>";
-		};
-		30B11AB9242722D5008A7AE8 /* DIY-VentilatorUITests */ = {
-			isa = PBXGroup;
-			children = (
-				30B11ABA242722D5008A7AE8 /* DIY_VentilatorUITests.swift */,
-				30B11ABC242722D5008A7AE8 /* Info.plist */,
-			);
-			path = "DIY-VentilatorUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,7 +243,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30B11AB0242722D5008A7AE8 /* DIY_VentilatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30B11ABB242722D5008A7AE8 /* DIY_VentilatorUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

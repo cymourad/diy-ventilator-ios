@@ -4,7 +4,9 @@ The physical ventilator can be found [here](https://github.com/cymourad/diy-vent
 
 ## Control
 The idea is for the user (who will most likely be the operator) to enter the approriate settings for the patient through the app. The app then converts those settings into appropriate controls to be sent to the ventilator (timers, voltage control parameters, etc) through a single string.
+
 This string would be composed of a number that contains all the information needed (going from Most Significant Digit to Least Significant Digit):
+
 1. one digit for **mode of operation**:
 
 | Value | Meaning |
@@ -16,21 +18,38 @@ This string would be composed of a number that contains all the information need
 
 2. one digit for **oxygen connection**:
 
-| Value | Meaning |
-| ----- | :-----: |
-|   0   | not connected |
-|   1   | connected |
+| Digit | 0 | 1 |
+| - | - | - |
+| Oxygen Source | not connected | connected |
 
 3. one digit for **oxygen control** (1 for 100% FiO2, 2 for 20%, 3 for 30% --> 9 for 90%)
-4. two digits for **respiratory rate** timer {only in Bi-PAP mode}
-5. two digits for **PIP** (or CPAP pressure)
-6. two digits for **PEEP**
+
+| Digit | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 1 |
+|-|-|-|-|-|-|-|-|-|-|
+| FiO2 | 20% | 30% | 40% | 50% | 60% | 70% | 80% | 90% | 100% |
+
+4. one digit for **humidifier connection**:
+
+| Digit | 0 | 1 |
+| - | - | - |
+| Humidifier| not connected | connected |
+
+5. two digits for **relative humidity** [%].
+
+6. two digits for **temperature** [degrees Celsius].
+
+7. two digits for **respiratory rate** [breaths/min].
+
+8. two digits for the **I:E ratio**: (first is I, second is E).
+
+9. two digits for **PIP** [cmH2O] (only in Bi-PAP mode).
+
+10. two digits for **PEEP** [cmH2O] (or CPAP pressure)
 
 
 ## Bluetooth
 IOS cannot interface with Bluetooth 2.0, BLE must be used.
 [This tutorial](https://www.freecodecamp.org/news/ultimate-how-to-bluetooth-swift-with-hardware-in-20-minutes/) breaks the basic functions needed for and IOS app to connect to a device and send information over BLE.
-
 
 Upon further thought, and with school work hitting hard, I would rather generate the control string in the app and ask the user to past this string into a 3rd party app that can connect to the HM-10 Module for now.
 
@@ -45,6 +64,3 @@ A great example is [this HM-10 Module](https://www.amazon.com/DSD-TECH-Bluetooth
 6. `git add .`
 7. `git commit -m ' describe your change'`
 8. `git push`
-
-
-

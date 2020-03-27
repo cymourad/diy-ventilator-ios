@@ -13,6 +13,12 @@
 		30B11AA0242722CE008A7AE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B11A9E242722CE008A7AE8 /* Main.storyboard */; };
 		30B11AA2242722D4008A7AE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30B11AA1242722D4008A7AE8 /* Assets.xcassets */; };
 		30B11AA5242722D4008A7AE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B11AA3242722D4008A7AE8 /* LaunchScreen.storyboard */; };
+		9CDBB66C242D6CC30023BBCA /* Cough .jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9CDBB66B242D6CC30023BBCA /* Cough .jpg */; };
+		9CDBB66E242D6E960023BBCA /* Virus.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9CDBB66D242D6E960023BBCA /* Virus.jpeg */; };
+		9CDBB670242D8C430023BBCA /* Handwashing.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9CDBB66F242D8C430023BBCA /* Handwashing.jpeg */; };
+		9CDBB672242D93BA0023BBCA /* Screen Shot 2020-03-26 at 2.19.03 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CDBB671242D93BA0023BBCA /* Screen Shot 2020-03-26 at 2.19.03 PM.png */; };
+		9CDBB674242D93CA0023BBCA /* WHO.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CDBB673242D93CA0023BBCA /* WHO.png */; };
+		9CDBB676242D93DC0023BBCA /* Government.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CDBB675242D93DC0023BBCA /* Government.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +49,12 @@
 		30B11AA6242722D4008A7AE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30B11AAB242722D5008A7AE8 /* DIY-VentilatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DIY-VentilatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B11AB6242722D5008A7AE8 /* DIY-VentilatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DIY-VentilatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CDBB66B242D6CC30023BBCA /* Cough .jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cough .jpg"; sourceTree = "<group>"; };
+		9CDBB66D242D6E960023BBCA /* Virus.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Virus.jpeg; sourceTree = "<group>"; };
+		9CDBB66F242D8C430023BBCA /* Handwashing.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Handwashing.jpeg; sourceTree = "<group>"; };
+		9CDBB671242D93BA0023BBCA /* Screen Shot 2020-03-26 at 2.19.03 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2020-03-26 at 2.19.03 PM.png"; sourceTree = "<group>"; };
+		9CDBB673242D93CA0023BBCA /* WHO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WHO.png; sourceTree = "<group>"; };
+		9CDBB675242D93DC0023BBCA /* Government.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Government.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +87,12 @@
 			children = (
 				30B11A97242722CE008A7AE8 /* DIY-Ventilator */,
 				30B11A96242722CE008A7AE8 /* Products */,
+				9CDBB66B242D6CC30023BBCA /* Cough .jpg */,
+				9CDBB66D242D6E960023BBCA /* Virus.jpeg */,
+				9CDBB66F242D8C430023BBCA /* Handwashing.jpeg */,
+				9CDBB671242D93BA0023BBCA /* Screen Shot 2020-03-26 at 2.19.03 PM.png */,
+				9CDBB673242D93CA0023BBCA /* WHO.png */,
+				9CDBB675242D93DC0023BBCA /* Government.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -206,9 +224,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CDBB674242D93CA0023BBCA /* WHO.png in Resources */,
+				9CDBB670242D8C430023BBCA /* Handwashing.jpeg in Resources */,
 				30B11AA5242722D4008A7AE8 /* LaunchScreen.storyboard in Resources */,
+				9CDBB66E242D6E960023BBCA /* Virus.jpeg in Resources */,
 				30B11AA2242722D4008A7AE8 /* Assets.xcassets in Resources */,
+				9CDBB672242D93BA0023BBCA /* Screen Shot 2020-03-26 at 2.19.03 PM.png in Resources */,
 				30B11AA0242722CE008A7AE8 /* Main.storyboard in Resources */,
+				9CDBB676242D93DC0023BBCA /* Government.png in Resources */,
+				9CDBB66C242D6CC30023BBCA /* Cough .jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

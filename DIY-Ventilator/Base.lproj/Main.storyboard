@@ -319,10 +319,10 @@ then press Play</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9P-l5-VkS">
-                                <rect key="frame" x="99" y="405" width="166" height="29"/>
+                                <rect key="frame" x="148" y="405" width="69" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title="COVID-19 and Ventilators"/>
+                                <state key="normal" title="COVID-19 "/>
                                 <connections>
                                     <segue destination="77d-Kn-y0P" kind="show" id="y1O-QQ-mCV"/>
                                 </connections>
@@ -373,64 +373,153 @@ then press Play</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cough .jpg" translatesAutoresizingMaskIntoConstraints="NO" id="33i-Ut-3Tm">
-                                <rect key="frame" x="251" y="251" width="129" height="126"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkS-Of-OBF">
-                                <rect key="frame" x="6" y="481" width="350" height="139"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Populations considered to be high risk 
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tK0-3f-mQB">
+                                <rect key="frame" x="0.0" y="44" width="375" height="2500"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BxA-Pb-Qu6">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2500"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cough .jpg" translatesAutoresizingMaskIntoConstraints="NO" id="33i-Ut-3Tm">
+                                                <rect key="frame" x="213" y="226" width="205" height="88"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Signs and Symptoms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8S-ko-ozL">
+                                                <rect key="frame" x="8" y="233" width="173" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAO-ce-hHU">
+                                                <rect key="frame" x="9" y="972" width="359" height="228"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Diagnosis is done either through laboratory testing or by observations of signs and symptoms by healthcare providers. 
+
+Most cases of COVID, symptoms will gradually disappear on their own, with no treatment needed. 
+However, some may be more susceptible to complications, requiring hospitalization and/or ventilation 
+</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkS-Of-OBF">
+                                                <rect key="frame" x="10" y="586" width="374" height="139"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Populations considered to be high risk 
 are those that are elderly (65+) as well as those with a compromised immune system or other underlying medical conditions </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is COVID-19?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cb-i8-U2Y">
-                                <rect key="frame" x="103" y="57" width="156" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rm4-G9-CB1">
-                                <rect key="frame" x="11" y="175" width="353" height="94"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Coronavirus disease (COVID-19) is an illness that 
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <string key="userLabel">Populations considered to be high risk  are those that are elderly (65+) as well as those with a compromised immune system or other underlying medical conditions</string>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is COVID-19?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cb-i8-U2Y">
+                                                <rect key="frame" x="103" y="13" width="156" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rm4-G9-CB1">
+                                                <rect key="frame" x="5" y="131" width="353" height="94"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Coronavirus disease (COVID-19) is an illness that 
 affects the respiratory tract
 
 As of March 11th, 2020, the World Health Organization 
 (WHO) declared COVID-19 to be a pandemic, meaning the
 disease had spread worldwide</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Signs and Symptoms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8S-ko-ozL">
-                                <rect key="frame" x="6" y="277" width="173" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFv-VS-mxN">
-                                <rect key="frame" x="9" y="327" width="0.0" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Virus.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="gkg-nA-vXc">
-                                <rect key="frame" x="0.0" y="86" width="375" height="81"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="1vF-vB-7Hj"/>
-                                    <constraint firstAttribute="height" constant="81" id="c9x-Lp-28J"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBI-lw-tbG">
-                                <rect key="frame" x="6" y="307" width="285" height="171"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Signs and symptoms associated with 
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <string key="userLabel">Coronavirus disease (COVID-19) is an illness that  affects the respiratory tract  As of March 11th, 2020, the World Health Organization  (WHO) declared COVID-19 to be a pandemic, meaning the disease had spread worldwide</string>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFv-VS-mxN">
+                                                <rect key="frame" x="187" y="654" width="0.0" height="0.0"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Virus.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="gkg-nA-vXc">
+                                                <rect key="frame" x="0.0" y="42" width="375" height="81"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="At Risk Populations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ua0-w1-xxn">
+                                                <rect key="frame" x="11" y="591" width="159" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prevention" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HmA-7C-LD5">
+                                                <rect key="frame" x="11" y="702" width="89" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqx-Yf-ieS">
+                                                <rect key="frame" x="10" y="827" width="367" height="173"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">In order to flatten the curve of COVID-19, it is important for all individuals to abide by the following guidelines: 
+
+1) Practicing social isolation 
+2) Wash hands for at least 20 seconds 
+3) Cough and sneeze into a tissue or into your elbow 
+4) Self-isolate for 14 days after returning from any travel 
+5) Monitor health symptoms 
+6) Regularly sanitize commonly used surfaces 
+</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Diagnosis and Treatment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sK-K8-gTs">
+                                                <rect key="frame" x="8" y="985" width="204" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Handwashing.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="HOX-fV-seG">
+                                                <rect key="frame" x="-1" y="731" width="375" height="88"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2020-03-26 at 2.19.03 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Uy-P7-ddN">
+                                                <rect key="frame" x="20" y="1202" width="71" height="41"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ht-dd-lPx">
+                                                <rect key="frame" x="120" y="1217" width="209" height="78"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Centre for Disease Control (CDC)
+
+World Health Organization (WHO) 
+
+Government of Canada </string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Government.png" translatesAutoresizingMaskIntoConstraints="NO" id="aAE-Df-Ur8">
+                                                <rect key="frame" x="11" y="1268" width="76" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WHO.png" translatesAutoresizingMaskIntoConstraints="NO" id="xu0-an-ypa">
+                                                <rect key="frame" x="20" y="1240" width="70" height="27"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Extra Resources" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncG-4k-qQ8">
+                                                <rect key="frame" x="11" y="1153" width="133" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBI-lw-tbG">
+                                                <rect key="frame" x="11" y="262" width="285" height="171"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Signs and symptoms associated with 
 COVID-19 are highly variable, ranging from 
 those who are asymptomatic, to minor cold 
 and flu-like symptoms to severe complications 
@@ -441,138 +530,71 @@ The most common signs and symptoms are:
 2) Difficulty breathing 
 3) Fever
 4) Bilateral pneumonia</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="At Risk Populations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ua0-w1-xxn">
-                                <rect key="frame" x="9" y="495" width="159" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Transmission " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWY-I3-L7o">
-                                <rect key="frame" x="11" y="599" width="113" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prevention" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HmA-7C-LD5">
-                                <rect key="frame" x="11" y="725" width="89" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqx-Yf-ieS">
-                                <rect key="frame" x="4" y="842" width="367" height="173"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">In order to flatten the curve of COVID-19, it is important for all individuals to abide by the following guidelines: 
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyE-3i-FQK">
+                                                <rect key="frame" x="9" y="1165" width="359" height="95"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">For more information, please refer to the following sources:
 
-1) Practicing social isolation 
-2) Washing hands for at least 20 seconds 
-3) Cough and sneeze into a tissue or into your elbow 
-4) Self-isolate for 14 days after returning from any travel 
-5) Monitor health symptoms 
-6) Regularly sanitize commonly used surfaces 
+
 </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72I-yB-pxe">
-                                <rect key="frame" x="11" y="604" width="369" height="141"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Coronavirus is transmitted through person-person contact: 
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Transmission " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWY-I3-L7o">
+                                                <rect key="frame" x="9" y="446" width="113" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAm-92-5Wv">
+                                                <rect key="frame" x="8" y="470" width="362" height="108"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Coronavirus is transmitted through person-person contact: 
 Shaking hands, hugging, or other forms of touching 
 Droplets of cough or sneezing from an infected person 
 
-*There is currently no evidence to suggest that COVID-19 is an airborne virus 
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Diagnosis and Treatment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sK-K8-gTs">
-                                <rect key="frame" x="4" y="1005" width="204" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Handwashing.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="HOX-fV-seG">
-                                <rect key="frame" x="0.0" y="753" width="375" height="88"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIQ-AE-SFi">
-                                <rect key="frame" x="381" y="1048" width="273" height="149"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Diagnosis is done either through laboratory testing or by observations of signs and symptoms by healthcare providers. 
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAO-ce-hHU">
-                                <rect key="frame" x="6" y="988" width="359" height="228"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Diagnosis is done either through laboratory testing or by observations of signs and symptoms by healthcare providers. 
-
-Most cases of COVID, symptoms will gradually disappear on their own, with no treatment needed. 
-However, some may be more susceptible to complications, requiring hospitalization and/or ventilation 
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Extra Resources" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncG-4k-qQ8">
-                                <rect key="frame" x="6" y="1176" width="133" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyE-3i-FQK">
-                                <rect key="frame" x="6" y="1200" width="359" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">For more information, please refer to the following sources:
-
-
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2020-03-26 at 2.19.03 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Uy-P7-ddN">
-                                <rect key="frame" x="5" y="1241" width="71" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ht-dd-lPx">
-                                <rect key="frame" x="84" y="1254" width="209" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Centre for Disease Control (CDC)
-
-World Health Organization (WHO) 
-
-Government of Canada </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Government.png" translatesAutoresizingMaskIntoConstraints="NO" id="aAE-Df-Ur8">
-                                <rect key="frame" x="0.0" y="1307" width="76" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WHO.png" translatesAutoresizingMaskIntoConstraints="NO" id="xu0-an-ypa">
-                                <rect key="frame" x="4" y="1280" width="70" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+*There is currently no evidence to suggest that COVID-19 is an airborne virus </string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2500" id="DH9-3l-IOt"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="BxA-Pb-Qu6" firstAttribute="height" secondItem="tK0-3f-mQB" secondAttribute="height" multiplier="0.884643" id="0PH-uE-sRN"/>
+                                    <constraint firstAttribute="height" constant="2500" id="6df-Qs-fpI"/>
+                                    <constraint firstAttribute="bottom" secondItem="BxA-Pb-Qu6" secondAttribute="bottom" id="70j-Ue-CF2"/>
+                                    <constraint firstAttribute="trailing" secondItem="BxA-Pb-Qu6" secondAttribute="trailing" id="MtO-uw-vRG"/>
+                                    <constraint firstItem="BxA-Pb-Qu6" firstAttribute="top" secondItem="tK0-3f-mQB" secondAttribute="top" id="Q5i-bq-bHV"/>
+                                    <constraint firstItem="BxA-Pb-Qu6" firstAttribute="leading" secondItem="tK0-3f-mQB" secondAttribute="leading" id="ZU2-6Q-E11"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="8" left="11" bottom="8" right="8"/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="2"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="gkg-nA-vXc" firstAttribute="centerX" secondItem="qUj-bI-BxL" secondAttribute="centerX" id="iE5-i8-V8J"/>
+                            <constraint firstAttribute="bottom" secondItem="tK0-3f-mQB" secondAttribute="bottom" id="EbP-wd-SAq"/>
+                            <constraint firstAttribute="bottom" secondItem="tK0-3f-mQB" secondAttribute="bottom" id="Fus-oo-ee3"/>
+                            <constraint firstItem="tK0-3f-mQB" firstAttribute="trailing" secondItem="JxN-Vr-zlS" secondAttribute="trailing" id="R3Z-Bg-euW"/>
+                            <constraint firstItem="tK0-3f-mQB" firstAttribute="trailing" secondItem="JxN-Vr-zlS" secondAttribute="trailing" id="WiZ-Rl-6uH"/>
+                            <constraint firstItem="tK0-3f-mQB" firstAttribute="top" secondItem="JxN-Vr-zlS" secondAttribute="top" id="b7T-5b-p8j"/>
+                            <constraint firstItem="tK0-3f-mQB" firstAttribute="top" secondItem="JxN-Vr-zlS" secondAttribute="top" id="bfc-0G-WPj"/>
+                            <constraint firstItem="BxA-Pb-Qu6" firstAttribute="width" secondItem="qUj-bI-BxL" secondAttribute="width" id="buA-fA-VPO"/>
+                            <constraint firstItem="BxA-Pb-Qu6" firstAttribute="height" secondItem="qUj-bI-BxL" secondAttribute="height" multiplier="1.78571" id="cOe-gB-bAE"/>
+                            <constraint firstItem="tK0-3f-mQB" firstAttribute="leading" secondItem="JxN-Vr-zlS" secondAttribute="leading" id="kKM-sx-5Ff"/>
+                            <constraint firstItem="tK0-3f-mQB" firstAttribute="leading" secondItem="JxN-Vr-zlS" secondAttribute="leading" id="xDh-EW-3rt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JxN-Vr-zlS"/>
                     </view>
@@ -580,7 +602,7 @@ Government of Canada </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zas-KK-PVd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2661.5999999999999" y="358.92053973013498"/>
+            <point key="canvasLocation" x="3066" y="-779"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -605,15 +627,57 @@ Government of Canada </string>
             <objects>
                 <viewController title="Extra Oxygen" id="Ylp-Vb-kk3" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TwL-LM-ynr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Yos-Bw-0vg">
+                                <rect key="frame" x="0.0" y="44" width="375" height="907"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbl-WK-Jl2">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="907"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yca-5q-kGP">
+                                                <rect key="frame" x="166" y="47" width="42" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Awz-cq-A2N">
+                                                <rect key="frame" x="139" y="843" width="42" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cbl-WK-Jl2" firstAttribute="leading" secondItem="Yos-Bw-0vg" secondAttribute="leading" id="QrT-Nt-pd7"/>
+                                    <constraint firstAttribute="bottom" secondItem="cbl-WK-Jl2" secondAttribute="bottom" id="YAT-Tt-XkX"/>
+                                    <constraint firstAttribute="trailing" secondItem="cbl-WK-Jl2" secondAttribute="trailing" id="jLn-4z-AtY"/>
+                                    <constraint firstItem="cbl-WK-Jl2" firstAttribute="top" secondItem="Yos-Bw-0vg" secondAttribute="top" id="rig-1I-4y0"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cbl-WK-Jl2" firstAttribute="width" secondItem="TwL-LM-ynr" secondAttribute="width" id="RiH-x4-EJU"/>
+                            <constraint firstItem="Yos-Bw-0vg" firstAttribute="leading" secondItem="TwL-LM-ynr" secondAttribute="leading" id="UD1-zN-c7q"/>
+                            <constraint firstItem="Yos-Bw-0vg" firstAttribute="top" secondItem="IfX-Aw-qSl" secondAttribute="top" id="kgN-GY-5HP"/>
+                            <constraint firstItem="Yos-Bw-0vg" firstAttribute="bottom" secondItem="IfX-Aw-qSl" secondAttribute="bottom" id="lZb-qc-iHm"/>
+                            <constraint firstItem="cbl-WK-Jl2" firstAttribute="height" secondItem="TwL-LM-ynr" secondAttribute="height" multiplier="0.907" id="y5H-ld-bfb"/>
+                            <constraint firstAttribute="trailing" secondItem="Yos-Bw-0vg" secondAttribute="trailing" id="ylX-R4-lGQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="IfX-Aw-qSl"/>
                     </view>
+                    <size key="freeformSize" width="375" height="1000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UWQ-Ur-FJM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="1065.5172413793105"/>
+            <point key="canvasLocation" x="1242" y="1500"/>
         </scene>
         <!--Monitoring the Patient-->
         <scene sceneID="HBI-rT-ZIU">
@@ -622,6 +686,15 @@ Government of Canada </string>
                     <view key="view" contentMode="scaleToFill" id="pj5-gU-GmU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yeE-9y-NHd">
+                                <rect key="frame" x="145" y="243" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="NGC-cn-7mI"/>
                     </view>
@@ -629,7 +702,7 @@ Government of Canada </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9wd-GQ-u1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1466" y="1066"/>
+            <point key="canvasLocation" x="4634" y="1589"/>
         </scene>
         <!--Different Types of Ventilators-->
         <scene sceneID="8Zl-OH-sm0">
@@ -656,7 +729,7 @@ Ventilators</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GPS-TW-WX1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="78" y="1066"/>
+            <point key="canvasLocation" x="118" y="1209"/>
         </scene>
         <!--Tutorials-->
         <scene sceneID="wfF-qS-jQy">

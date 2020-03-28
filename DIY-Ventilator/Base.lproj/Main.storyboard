@@ -403,75 +403,113 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNZ-Aj-lNb">
-                                <rect key="frame" x="22" y="126" width="321" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNZ-Aj-lNb">
+                                <rect key="frame" x="27" y="96" width="321" height="33.5"/>
                                 <string key="text">Please pick a video tutorial from the picker below 
 then press Play</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Or press on one of the following tutorilas to read it" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNc-hh-5ZM">
-                                <rect key="frame" x="25" y="365" width="324" height="17"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or press on one of the following tutorilas to read it" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNc-hh-5ZM">
+                                <rect key="frame" x="25.5" y="365" width="324" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hqk-HT-4FU" userLabel="Tutorial Picker View">
-                                <rect key="frame" x="0.0" y="160" width="375" height="147"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqk-HT-4FU" userLabel="Tutorial Picker View">
+                                <rect key="frame" x="-5" y="137" width="375" height="216"/>
                                 <connections>
                                     <outlet property="dataSource" destination="8rJ-Kc-sve" id="Wpb-sY-k5t"/>
                                     <outlet property="delegate" destination="8rJ-Kc-sve" id="zxU-0n-Whv"/>
                                 </connections>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5Y-rs-gL5">
-                                <rect key="frame" x="167" y="315" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Play"/>
-                                <connections>
-                                    <action selector="playButtonTapped:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="VgV-Ds-d1a"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9P-l5-VkS">
-                                <rect key="frame" x="148" y="405" width="69" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9P-l5-VkS">
+                                <rect key="frame" x="153" y="405" width="69" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="COVID-19 "/>
                                 <connections>
                                     <segue destination="77d-Kn-y0P" kind="show" id="y1O-QQ-mCV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcE-v1-Jub">
-                                <rect key="frame" x="88" y="442" width="188" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcE-v1-Jub">
+                                <rect key="frame" x="93.5" y="483" width="188" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Different Types of Ventilation"/>
                                 <connections>
                                     <segue destination="gfc-sm-ued" kind="show" id="Fj7-mW-Uyo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XF3-F6-1Nu">
-                                <rect key="frame" x="136" y="479" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XF3-F6-1Nu">
+                                <rect key="frame" x="141.5" y="520" width="92" height="30"/>
                                 <state key="normal" title="Extra Oxygen"/>
                                 <connections>
                                     <segue destination="Ylp-Vb-kk3" kind="show" id="04i-mf-cys"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHM-YU-w2d">
-                                <rect key="frame" x="106" y="517" width="152" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHM-YU-w2d">
+                                <rect key="frame" x="111.5" y="558" width="152" height="30"/>
                                 <state key="normal" title="Monitoring the Patient"/>
                                 <connections>
                                     <segue destination="Hnz-yc-0eK" kind="show" id="J2r-7O-bHL"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ZU-Q4-OjM">
+                                <rect key="frame" x="102.5" y="442" width="170" height="30"/>
+                                <state key="normal" title="Normal Lung Physiology "/>
+                                <connections>
+                                    <segue destination="Aw8-4T-HlJ" kind="show" id="4iP-eL-zQh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5Y-rs-gL5">
+                                <rect key="frame" x="172.5" y="323" width="30" height="30"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playButtonTapped:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="VgV-Ds-d1a"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="dNc-hh-5ZM" firstAttribute="centerX" secondItem="O1u-W8-tvY" secondAttribute="centerX" id="uiW-yR-aHS"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="d9P-l5-VkS" secondAttribute="trailing" constant="153" id="0S6-S5-Wt8"/>
+                            <constraint firstItem="d9P-l5-VkS" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="153" id="1eE-ne-2Fg"/>
+                            <constraint firstItem="dNc-hh-5ZM" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="2lG-Hj-QBz"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="6ZU-Q4-OjM" secondAttribute="trailing" constant="102.5" id="5Zo-ai-Z07"/>
+                            <constraint firstItem="gNZ-Aj-lNb" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="27" id="Aq5-dS-GO0"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="gNZ-Aj-lNb" secondAttribute="trailing" constant="27" id="B5S-hq-7KF"/>
+                            <constraint firstItem="XF3-F6-1Nu" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="Cr5-Gd-JEY"/>
+                            <constraint firstItem="hqk-HT-4FU" firstAttribute="top" secondItem="gNZ-Aj-lNb" secondAttribute="bottom" constant="7.5" id="DN9-oo-tiA"/>
+                            <constraint firstItem="i5Y-rs-gL5" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="172.5" id="ELm-YC-gss"/>
+                            <constraint firstItem="dNc-hh-5ZM" firstAttribute="top" secondItem="i5Y-rs-gL5" secondAttribute="bottom" constant="12" id="I2h-qJ-wy2"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="XF3-F6-1Nu" secondAttribute="trailing" constant="141.5" id="K6M-8H-E0w"/>
+                            <constraint firstItem="RHM-YU-w2d" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="111.5" id="Lhi-4T-9pH"/>
+                            <constraint firstItem="hqk-HT-4FU" firstAttribute="top" secondItem="gNZ-Aj-lNb" secondAttribute="bottom" constant="7.5" id="Njj-Uo-xiF"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="hqk-HT-4FU" secondAttribute="trailing" constant="5" id="OhN-l0-ssi"/>
+                            <constraint firstItem="i5Y-rs-gL5" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="P3I-z6-RIB"/>
+                            <constraint firstItem="RHM-YU-w2d" firstAttribute="top" secondItem="XF3-F6-1Nu" secondAttribute="bottom" constant="8" id="PUc-j7-Kz6"/>
+                            <constraint firstItem="ZcE-v1-Jub" firstAttribute="top" secondItem="6ZU-Q4-OjM" secondAttribute="bottom" constant="11" id="Pyv-Fz-HjB"/>
+                            <constraint firstItem="gNZ-Aj-lNb" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="52" id="Qbj-pb-O0T"/>
+                            <constraint firstItem="i5Y-rs-gL5" firstAttribute="top" secondItem="gNZ-Aj-lNb" secondAttribute="bottom" constant="193.5" id="SQs-f9-xvw"/>
+                            <constraint firstItem="ZcE-v1-Jub" firstAttribute="top" secondItem="6ZU-Q4-OjM" secondAttribute="bottom" constant="11" id="TgC-Vg-DZe"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="i5Y-rs-gL5" secondAttribute="trailing" constant="172.5" id="URP-t5-Gwi"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="ZcE-v1-Jub" secondAttribute="trailing" constant="93.5" id="X4M-RU-FPr"/>
+                            <constraint firstItem="6ZU-Q4-OjM" firstAttribute="top" secondItem="d9P-l5-VkS" secondAttribute="bottom" constant="8" id="Xor-Hg-sat"/>
+                            <constraint firstItem="d9P-l5-VkS" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="aAd-ic-8Br"/>
+                            <constraint firstItem="6ZU-Q4-OjM" firstAttribute="top" secondItem="d9P-l5-VkS" secondAttribute="bottom" constant="8" id="ePK-1h-D0i"/>
+                            <constraint firstItem="ZcE-v1-Jub" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="93.5" id="g6I-tT-0cM"/>
+                            <constraint firstItem="ZcE-v1-Jub" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="gnQ-lO-FA3"/>
+                            <constraint firstItem="RHM-YU-w2d" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="hj3-RN-JLa"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="RHM-YU-w2d" secondAttribute="trailing" constant="111.5" id="lzI-9n-Hem"/>
+                            <constraint firstItem="hqk-HT-4FU" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="-5" id="p8n-aB-gqf"/>
+                            <constraint firstItem="6ZU-Q4-OjM" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="p9h-db-73f"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="RHM-YU-w2d" secondAttribute="bottom" constant="30" id="puJ-iU-pb0"/>
+                            <constraint firstItem="XF3-F6-1Nu" firstAttribute="top" secondItem="ZcE-v1-Jub" secondAttribute="bottom" constant="8" id="tX0-WW-WH9"/>
+                            <constraint firstItem="6ZU-Q4-OjM" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="102.5" id="tdE-1u-dBr"/>
+                            <constraint firstItem="d9P-l5-VkS" firstAttribute="top" secondItem="dNc-hh-5ZM" secondAttribute="bottom" constant="23" id="ws7-Am-A4t"/>
+                            <constraint firstItem="dNc-hh-5ZM" firstAttribute="top" secondItem="hqk-HT-4FU" secondAttribute="bottom" constant="12" id="wut-xa-UGT"/>
+                            <constraint firstItem="XF3-F6-1Nu" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="141.5" id="zUi-B3-tfe"/>
+                            <constraint firstItem="RHM-YU-w2d" firstAttribute="top" secondItem="XF3-F6-1Nu" secondAttribute="bottom" constant="8" id="zeY-Vh-I4g"/>
+                            <constraint firstItem="XF3-F6-1Nu" firstAttribute="top" secondItem="ZcE-v1-Jub" secondAttribute="bottom" constant="8" id="znh-2U-chR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
@@ -796,7 +834,148 @@ Droplets of cough or sneezing from an infected person
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UWQ-Ur-FJM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1242" y="1500"/>
+            <point key="canvasLocation" x="-162" y="1358"/>
+        </scene>
+        <!--Lung Physiology-->
+        <scene sceneID="3zm-uJ-F94">
+            <objects>
+                <viewController id="Aw8-4T-HlJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="555-4O-bYy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HdJ-Ax-eq4">
+                                <rect key="frame" x="0.0" y="44" width="375" height="807"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E6i-WX-jza">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Stages of Breathing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBc-AK-6su">
+                                                <rect key="frame" x="106.5" y="8" width="162" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="TidalVolume.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zYk-7P-RJ3">
+                                                <rect key="frame" x="0.0" y="334" width="375" height="147"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgV-9e-JCW">
+                                                <rect key="frame" x="8" y="489" width="359" height="153"/>
+                                                <string key="text">Tidal Volume - The amount of air going into and out of the lungs during a normal breath 
+
+Total Lung Capacity - The total volume of air that both lungs can hold
+
+Respiratory Rate - Number of expirations and inspirations (breaths) per minute
+</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Lung Chart.png" translatesAutoresizingMaskIntoConstraints="NO" id="mEw-Fl-1k3">
+                                                <rect key="frame" x="0.0" y="612" width="375" height="109"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Abnormal Physiology of Breathing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdQ-Vc-IdM">
+                                                <rect key="frame" x="48" y="729" width="279" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JU0-Lh-DQ5">
+                                                <rect key="frame" x="13" y="758" width="349" height="159"/>
+                                                <string key="text">When a person is unable to fully breath on their own, ventilators may be used to make the process of breathing easier on patients. The simple mechanism is to provide a constant positive pressure of air into the lungs to act as a ‘splint’ that keeps the airway open and prevents it from collapsing 
+
+For more information about the different types of ventilation, please refer to the tutorial labelled: 
+</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U33-BV-6cH">
+                                                <rect key="frame" x="99" y="920" width="177" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <state key="normal" title="Different Types of Ventilation"/>
+                                                <connections>
+                                                    <segue destination="gfc-sm-ued" kind="show" id="m8U-2T-uMv"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Lung Measurements " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaH-Mu-DNf">
+                                                <rect key="frame" x="102" y="305" width="171" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4i7-db-cz1">
+                                                <rect key="frame" x="8" y="37" width="359" height="260"/>
+                                                <mutableString key="text">The normal process of breathing has two main stages: 
+
+1) Inspiration 
+This is the active part of breathing, meaning the muscles of the diaphragm and those surrounding the ribs are actively contracting, and increasing the volume (and thus decreasing the pressure) of the intrathoracic cavity. 
+This causes the pressure inside the lungs to be less than the pressure outside the lugs, which pushes air inside
+
+2) Expiration 
+ This is the passive part of breathing where all the muscles relax, decreasing the volume of the intrathoracic cavity, and thus increasing the pressure. This causes the pressure inside the lungs to be higher than the atmospheric pressure, causing air to be pushed out.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="tdQ-Vc-IdM" firstAttribute="top" secondItem="mEw-Fl-1k3" secondAttribute="bottom" constant="8" id="6Cf-dc-mVC"/>
+                                            <constraint firstAttribute="trailing" secondItem="SgV-9e-JCW" secondAttribute="trailing" constant="8" id="97U-WF-UD0"/>
+                                            <constraint firstAttribute="trailing" secondItem="zYk-7P-RJ3" secondAttribute="trailing" id="CAF-Jf-GiU"/>
+                                            <constraint firstItem="JU0-Lh-DQ5" firstAttribute="top" secondItem="tdQ-Vc-IdM" secondAttribute="bottom" constant="8" id="Eel-TQ-fFL"/>
+                                            <constraint firstAttribute="trailing" secondItem="JU0-Lh-DQ5" secondAttribute="trailing" constant="13" id="IRg-lt-4sh"/>
+                                            <constraint firstItem="mEw-Fl-1k3" firstAttribute="leading" secondItem="E6i-WX-jza" secondAttribute="leading" id="LlJ-Tx-fHB"/>
+                                            <constraint firstItem="JU0-Lh-DQ5" firstAttribute="leading" secondItem="E6i-WX-jza" secondAttribute="leading" constant="13" id="MQN-vx-ocb"/>
+                                            <constraint firstAttribute="trailing" secondItem="mEw-Fl-1k3" secondAttribute="trailing" id="Oke-Xq-L0n"/>
+                                            <constraint firstItem="tdQ-Vc-IdM" firstAttribute="centerX" secondItem="E6i-WX-jza" secondAttribute="centerX" id="PcU-gt-pkf"/>
+                                            <constraint firstItem="4i7-db-cz1" firstAttribute="leading" secondItem="E6i-WX-jza" secondAttribute="leading" constant="8" id="Pqn-2f-zrI"/>
+                                            <constraint firstItem="XaH-Mu-DNf" firstAttribute="centerX" secondItem="E6i-WX-jza" secondAttribute="centerX" id="TgZ-Gq-ncC"/>
+                                            <constraint firstItem="zYk-7P-RJ3" firstAttribute="top" secondItem="XaH-Mu-DNf" secondAttribute="bottom" constant="8" id="UNi-bB-nLv"/>
+                                            <constraint firstItem="mEw-Fl-1k3" firstAttribute="top" secondItem="zYk-7P-RJ3" secondAttribute="bottom" constant="131" id="W9f-K3-Pvd"/>
+                                            <constraint firstItem="U33-BV-6cH" firstAttribute="centerX" secondItem="E6i-WX-jza" secondAttribute="centerX" id="Y1Z-yl-USN"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="1000" id="c2G-iu-ZSH"/>
+                                            <constraint firstAttribute="trailing" secondItem="4i7-db-cz1" secondAttribute="trailing" constant="8" id="dY5-OZ-aS6"/>
+                                            <constraint firstAttribute="trailing" secondItem="mEw-Fl-1k3" secondAttribute="trailing" id="ogQ-Yh-WL8"/>
+                                            <constraint firstItem="mEw-Fl-1k3" firstAttribute="leading" secondItem="E6i-WX-jza" secondAttribute="leading" id="qHs-iO-2hh"/>
+                                            <constraint firstItem="XaH-Mu-DNf" firstAttribute="top" secondItem="4i7-db-cz1" secondAttribute="bottom" constant="8" id="r5a-jc-9v2"/>
+                                            <constraint firstItem="4i7-db-cz1" firstAttribute="top" secondItem="EBc-AK-6su" secondAttribute="bottom" constant="8" id="tjh-CY-5DA"/>
+                                            <constraint firstItem="SgV-9e-JCW" firstAttribute="top" secondItem="zYk-7P-RJ3" secondAttribute="bottom" constant="8" id="uOx-o6-Wdo"/>
+                                            <constraint firstItem="EBc-AK-6su" firstAttribute="centerX" secondItem="E6i-WX-jza" secondAttribute="centerX" id="vBU-K8-YZ2"/>
+                                            <constraint firstItem="tdQ-Vc-IdM" firstAttribute="top" secondItem="mEw-Fl-1k3" secondAttribute="bottom" constant="8" id="vbf-6l-dPH"/>
+                                            <constraint firstItem="U33-BV-6cH" firstAttribute="top" secondItem="JU0-Lh-DQ5" secondAttribute="bottom" constant="3" id="w4y-eK-ftd"/>
+                                            <constraint firstItem="zYk-7P-RJ3" firstAttribute="leading" secondItem="E6i-WX-jza" secondAttribute="leading" id="w6c-A6-1jP"/>
+                                            <constraint firstItem="SgV-9e-JCW" firstAttribute="top" secondItem="zYk-7P-RJ3" secondAttribute="bottom" constant="8" id="wKj-2T-qRH"/>
+                                            <constraint firstItem="SgV-9e-JCW" firstAttribute="leading" secondItem="E6i-WX-jza" secondAttribute="leading" constant="8" id="xPy-dt-f18"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="E6i-WX-jza" secondAttribute="trailing" id="3gD-4v-ppR"/>
+                                    <constraint firstAttribute="bottom" secondItem="E6i-WX-jza" secondAttribute="bottom" id="5gD-LT-63q"/>
+                                    <constraint firstItem="E6i-WX-jza" firstAttribute="top" secondItem="HdJ-Ax-eq4" secondAttribute="top" id="fBK-cy-LK2"/>
+                                    <constraint firstItem="E6i-WX-jza" firstAttribute="leading" secondItem="HdJ-Ax-eq4" secondAttribute="leading" id="gqQ-pk-3rK"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HdJ-Ax-eq4" firstAttribute="top" secondItem="EvR-Sr-XSO" secondAttribute="top" id="HM1-7u-Blf"/>
+                            <constraint firstItem="HdJ-Ax-eq4" firstAttribute="trailing" secondItem="EvR-Sr-XSO" secondAttribute="trailing" id="QY9-lx-Njk"/>
+                            <constraint firstItem="HdJ-Ax-eq4" firstAttribute="bottom" secondItem="EvR-Sr-XSO" secondAttribute="bottom" id="ePd-kd-kDS"/>
+                            <constraint firstItem="HdJ-Ax-eq4" firstAttribute="leading" secondItem="EvR-Sr-XSO" secondAttribute="leading" id="nCz-56-7VU"/>
+                            <constraint firstItem="E6i-WX-jza" firstAttribute="width" secondItem="555-4O-bYy" secondAttribute="width" id="oov-ai-057"/>
+                            <constraint firstItem="E6i-WX-jza" firstAttribute="height" secondItem="555-4O-bYy" secondAttribute="height" multiplier="1.11111" id="qRV-kN-ogV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EvR-Sr-XSO"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lung Physiology" id="ZD7-Ih-4b3"/>
+                    <size key="freeformSize" width="375" height="900"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fdg-kG-f7H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2328.8000000000002" y="1722.6386806596704"/>
         </scene>
         <!--Monitoring the Patient-->
         <scene sceneID="HBI-rT-ZIU">
@@ -827,28 +1006,63 @@ Droplets of cough or sneezing from an infected person
         <scene sceneID="8Zl-OH-sm0">
             <objects>
                 <viewController title="Different Types of Ventilators" id="gfc-sm-ued" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gWk-47-ZFa">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="gWk-47-ZFa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ekt-Or-LGq">
-                                <rect key="frame" x="59" y="153" width="256" height="82"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HYh-Kr-ah9">
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bEF-yQ-MpM">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="125.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gS-yN-2zB">
+                                                <rect key="frame" x="71" y="71" width="42" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1000" id="Z3l-BJ-91U"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="bEF-yQ-MpM" secondAttribute="bottom" id="A1T-TR-Gsn"/>
+                                    <constraint firstItem="bEF-yQ-MpM" firstAttribute="leading" secondItem="HYh-Kr-ah9" secondAttribute="leading" id="Fud-l7-QUi"/>
+                                    <constraint firstItem="bEF-yQ-MpM" firstAttribute="trailing" secondItem="HYh-Kr-ah9" secondAttribute="trailing" id="NeI-w4-smq"/>
+                                    <constraint firstItem="bEF-yQ-MpM" firstAttribute="top" secondItem="HYh-Kr-ah9" secondAttribute="top" id="VIR-uf-Y87"/>
+                                    <constraint firstItem="bEF-yQ-MpM" firstAttribute="height" secondItem="HYh-Kr-ah9" secondAttribute="height" id="uDl-0g-hiD"/>
+                                </constraints>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OCM-vz-iqm">
+                                <rect key="frame" x="62" y="876" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Different Types of
-Ventilators</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bEF-yQ-MpM" firstAttribute="height" secondItem="gWk-47-ZFa" secondAttribute="height" multiplier="0.574" id="1IK-sd-wFu"/>
+                            <constraint firstItem="HYh-Kr-ah9" firstAttribute="top" secondItem="eyf-YX-8Zx" secondAttribute="top" id="5kR-Wx-AAW"/>
+                            <constraint firstItem="HYh-Kr-ah9" firstAttribute="leading" secondItem="eyf-YX-8Zx" secondAttribute="leading" id="UmZ-K1-1A9"/>
+                            <constraint firstItem="HYh-Kr-ah9" firstAttribute="trailing" secondItem="eyf-YX-8Zx" secondAttribute="trailing" id="YVd-Xa-tT5"/>
+                            <constraint firstItem="bEF-yQ-MpM" firstAttribute="width" secondItem="gWk-47-ZFa" secondAttribute="width" id="edm-gt-dHe"/>
+                            <constraint firstItem="HYh-Kr-ah9" firstAttribute="bottom" secondItem="eyf-YX-8Zx" secondAttribute="bottom" id="mk4-mR-aTJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="eyf-YX-8Zx"/>
                     </view>
                     <navigationItem key="navigationItem" title="Different Types of Ventialators" id="ehw-nD-bXZ"/>
+                    <size key="freeformSize" width="375" height="1000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GPS-TW-WX1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="118" y="1209"/>
+            <point key="canvasLocation" x="925.60000000000002" y="1586.3568215892055"/>
         </scene>
         <!--Tutorials-->
         <scene sceneID="wfF-qS-jQy">
@@ -870,11 +1084,16 @@ Ventilators</string>
             <point key="canvasLocation" x="750" y="336"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="m8U-2T-uMv"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Cough .jpg" width="350" height="233"/>
         <image name="Government.png" width="196" height="69"/>
         <image name="Handwashing.jpeg" width="276" height="183"/>
+        <image name="Lung Chart.png" width="683" height="176"/>
         <image name="Screen Shot 2020-03-26 at 2.19.03 PM.png" width="248" height="65"/>
+        <image name="TidalVolume.jpg" width="935" height="323"/>
         <image name="Virus.jpeg" width="318" height="159"/>
         <image name="WHO.png" width="225" height="82"/>
         <image name="first" width="30" height="30"/>

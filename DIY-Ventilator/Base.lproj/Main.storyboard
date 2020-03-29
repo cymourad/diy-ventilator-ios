@@ -435,7 +435,7 @@ then press Play</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcE-v1-Jub">
                                 <rect key="frame" x="93.5" y="483" width="188" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title="Different Types of Ventilation"/>
+                                <state key="normal" title="Positive Pressure Ventilation"/>
                                 <connections>
                                     <segue destination="gfc-sm-ued" kind="show" id="Fj7-mW-Uyo"/>
                                 </connections>
@@ -534,7 +534,7 @@ then press Play</string>
                                 <rect key="frame" x="0.0" y="44" width="375" height="2691"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BxA-Pb-Qu6">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2500"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="4543"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cough .jpg" translatesAutoresizingMaskIntoConstraints="NO" id="33i-Ut-3Tm">
                                                 <rect key="frame" x="213" y="226" width="205" height="88"/>
@@ -894,9 +894,6 @@ For more information about the different types of ventilation, please refer to t
                                                 <rect key="frame" x="99" y="920" width="177" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <state key="normal" title="Different Types of Ventilation"/>
-                                                <connections>
-                                                    <segue destination="gfc-sm-ued" kind="show" id="m8U-2T-uMv"/>
-                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Lung Measurements " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaH-Mu-DNf">
                                                 <rect key="frame" x="102" y="305" width="171" height="21"/>
@@ -906,14 +903,14 @@ For more information about the different types of ventilation, please refer to t
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4i7-db-cz1">
                                                 <rect key="frame" x="8" y="37" width="359" height="260"/>
-                                                <mutableString key="text">The normal process of breathing has two main stages: 
+                                                <string key="text">The normal process of breathing has two main stages: 
 
 1) Inspiration 
 This is the active part of breathing, meaning the muscles of the diaphragm and those surrounding the ribs are actively contracting, and increasing the volume (and thus decreasing the pressure) of the intrathoracic cavity. 
 This causes the pressure inside the lungs to be less than the pressure outside the lugs, which pushes air inside
 
 2) Expiration 
- This is the passive part of breathing where all the muscles relax, decreasing the volume of the intrathoracic cavity, and thus increasing the pressure. This causes the pressure inside the lungs to be higher than the atmospheric pressure, causing air to be pushed out.</mutableString>
+ This is the passive part of breathing where all the muscles relax, decreasing the volume of the intrathoracic cavity, and thus increasing the pressure. This causes the pressure inside the lungs to be higher than the atmospheric pressure, causing air to be pushed out.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1006,63 +1003,139 @@ This causes the pressure inside the lungs to be less than the pressure outside t
         <scene sceneID="8Zl-OH-sm0">
             <objects>
                 <viewController title="Different Types of Ventilators" id="gfc-sm-ued" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="gWk-47-ZFa">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                    <view key="view" contentMode="scaleToFill" id="gWk-47-ZFa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HYh-Kr-ah9">
-                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jk4-AS-xZj">
+                                <rect key="frame" x="0.0" y="44" width="375" height="1407"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bEF-yQ-MpM">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="125.5"/>
+                                    <view alpha="0.94999999999999996" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B6K-W4-565">
+                                        <rect key="frame" x="-8" y="0.0" width="375" height="2249"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gS-yN-2zB">
-                                                <rect key="frame" x="71" y="71" width="42" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CPAP (Continous Positive Airway Pressure) " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhQ-C5-UWU">
+                                                <rect key="frame" x="12" y="159" width="358" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NF-d5-9Bs">
+                                                <rect key="frame" x="19" y="198" width="323" height="234"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">A method of non-invasive ventilation typically used for those diagnosied with obstructive sleep apnea
+
+How does it work? 
+A constant pressure of air is supplied to the lungs through a mask to prevent the lungs from collapsing during expiration 
+
+When does it work? 
+CPAP is typically used in cases of chronic sleep apnea, yet it may also be effective in cases of respiratory distress such as asthma or pneumonia
+
+Table 1 shows the measurements to input when setting up CPAP mode 
+  </string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Screen Shot 2020-03-29 at 4.01.43 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="8kb-Xg-FaZ">
+                                                <rect key="frame" x="12" y="420" width="379" height="147"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BiPAP (Bilateral Positive Airway Pressure) " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7f-qE-nxe">
+                                                <rect key="frame" x="19" y="564" width="345" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NnD-ig-2De">
+                                                <rect key="frame" x="21" y="593" width="350" height="240"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Similar to CPAP machine, yet the pressure changes as the patient inhales and exhales. It is often used when the state of the patient deteriorates and a CPAP is no longer effective
+
+Positive End Expiratory Pressure (PEEP): pressure delivered by the machine when patient exhales  
+
+Positive Inspiratory Pressure (PIP): Pressure delivered by machine when patient inhales
+
+FiO2: percentage of oxygen supplied by machine
+
+Table 2 shows the measurements to input when setting up BiPAP mode</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BiPAP Measurements.png" translatesAutoresizingMaskIntoConstraints="NO" id="kg5-xI-IKq">
+                                                <rect key="frame" x="9" y="841" width="379" height="123"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is non-invasivepositive pressure ventilation? " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvx-dL-AQy">
+                                                <rect key="frame" x="21" y="8" width="354" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAp-Ut-MfI">
+                                                <rect key="frame" x="17" y="35" width="370" height="130"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Non-invasive positive pressure ventilation is a method of supplying air pressure to the patient through an external mask in order to assist with the process of breathing
+
+The methods of supplying positive pressure ventilation as described below </string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pressure Support Ventilation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXv-qM-C01">
+                                                <rect key="frame" x="17" y="972" width="236" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yf-BG-HZa">
+                                                <rect key="frame" x="23" y="976" width="351" height="115"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">A mode of ventilation in which each breath is patient-triggered assuming the patient has a respiratory rate (RR) of 12 or higher. 
+If this RR is not maintained by the patient, each breath is automatically machine-triggered. </string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1000" id="Z3l-BJ-91U"/>
+                                            <constraint firstItem="8kb-Xg-FaZ" firstAttribute="centerX" secondItem="B6K-W4-565" secondAttribute="centerX" id="FyN-dM-XG5"/>
+                                            <constraint firstItem="8kb-Xg-FaZ" firstAttribute="centerX" secondItem="B6K-W4-565" secondAttribute="centerX" id="VLF-5q-Oe7"/>
                                         </constraints>
                                     </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ch-eE-VZY">
+                                        <rect key="frame" x="2" y="-171" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="bEF-yQ-MpM" secondAttribute="bottom" id="A1T-TR-Gsn"/>
-                                    <constraint firstItem="bEF-yQ-MpM" firstAttribute="leading" secondItem="HYh-Kr-ah9" secondAttribute="leading" id="Fud-l7-QUi"/>
-                                    <constraint firstItem="bEF-yQ-MpM" firstAttribute="trailing" secondItem="HYh-Kr-ah9" secondAttribute="trailing" id="NeI-w4-smq"/>
-                                    <constraint firstItem="bEF-yQ-MpM" firstAttribute="top" secondItem="HYh-Kr-ah9" secondAttribute="top" id="VIR-uf-Y87"/>
-                                    <constraint firstItem="bEF-yQ-MpM" firstAttribute="height" secondItem="HYh-Kr-ah9" secondAttribute="height" id="uDl-0g-hiD"/>
+                                    <constraint firstItem="B6K-W4-565" firstAttribute="leading" secondItem="Jk4-AS-xZj" secondAttribute="leading" id="9dE-Mp-9rz"/>
+                                    <constraint firstAttribute="bottom" secondItem="B6K-W4-565" secondAttribute="bottom" id="CXt-rS-lYs"/>
+                                    <constraint firstAttribute="bottom" secondItem="B6K-W4-565" secondAttribute="bottom" constant="-672" id="cYQ-IF-RP0"/>
+                                    <constraint firstItem="B6K-W4-565" firstAttribute="top" secondItem="Jk4-AS-xZj" secondAttribute="top" id="dQp-2u-dsf"/>
+                                    <constraint firstItem="B6K-W4-565" firstAttribute="leading" secondItem="Jk4-AS-xZj" secondAttribute="leading" id="e3T-ql-fkJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="B6K-W4-565" secondAttribute="trailing" id="lWN-X1-Cvx"/>
+                                    <constraint firstItem="B6K-W4-565" firstAttribute="top" secondItem="Jk4-AS-xZj" secondAttribute="top" constant="-15" id="uZk-H2-l9S"/>
+                                    <constraint firstAttribute="trailing" secondItem="B6K-W4-565" secondAttribute="trailing" id="yXi-nF-LWz"/>
                                 </constraints>
                             </scrollView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OCM-vz-iqm">
-                                <rect key="frame" x="62" y="876" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="bEF-yQ-MpM" firstAttribute="height" secondItem="gWk-47-ZFa" secondAttribute="height" multiplier="0.574" id="1IK-sd-wFu"/>
-                            <constraint firstItem="HYh-Kr-ah9" firstAttribute="top" secondItem="eyf-YX-8Zx" secondAttribute="top" id="5kR-Wx-AAW"/>
-                            <constraint firstItem="HYh-Kr-ah9" firstAttribute="leading" secondItem="eyf-YX-8Zx" secondAttribute="leading" id="UmZ-K1-1A9"/>
-                            <constraint firstItem="HYh-Kr-ah9" firstAttribute="trailing" secondItem="eyf-YX-8Zx" secondAttribute="trailing" id="YVd-Xa-tT5"/>
-                            <constraint firstItem="bEF-yQ-MpM" firstAttribute="width" secondItem="gWk-47-ZFa" secondAttribute="width" id="edm-gt-dHe"/>
-                            <constraint firstItem="HYh-Kr-ah9" firstAttribute="bottom" secondItem="eyf-YX-8Zx" secondAttribute="bottom" id="mk4-mR-aTJ"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="eyf-YX-8Zx"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Different Types of Ventialators" id="ehw-nD-bXZ"/>
-                    <size key="freeformSize" width="375" height="1000"/>
+                    <navigationItem key="navigationItem" title="CPAP" id="ehw-nD-bXZ"/>
+                    <size key="freeformSize" width="375" height="1200"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GPS-TW-WX1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="925.60000000000002" y="1586.3568215892055"/>
+            <point key="canvasLocation" x="925.60000000000002" y="1585.9070464767617"/>
         </scene>
         <!--Tutorials-->
         <scene sceneID="wfF-qS-jQy">
@@ -1084,15 +1157,14 @@ This causes the pressure inside the lungs to be less than the pressure outside t
             <point key="canvasLocation" x="750" y="336"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="m8U-2T-uMv"/>
-    </inferredMetricsTieBreakers>
     <resources>
+        <image name="BiPAP Measurements.png" width="672" height="213"/>
         <image name="Cough .jpg" width="350" height="233"/>
         <image name="Government.png" width="196" height="69"/>
         <image name="Handwashing.jpeg" width="276" height="183"/>
         <image name="Lung Chart.png" width="683" height="176"/>
         <image name="Screen Shot 2020-03-26 at 2.19.03 PM.png" width="248" height="65"/>
+        <image name="Screen Shot 2020-03-29 at 4.01.43 PM.png" width="672" height="213"/>
         <image name="TidalVolume.jpg" width="935" height="323"/>
         <image name="Virus.jpeg" width="318" height="159"/>
         <image name="WHO.png" width="225" height="82"/>

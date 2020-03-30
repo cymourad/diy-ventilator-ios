@@ -25,6 +25,7 @@
 		9CDBB67E24313C3F0023BBCA /* Screen Shot 2020-03-29 at 4.01.43 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CDBB67D24313C3E0023BBCA /* Screen Shot 2020-03-29 at 4.01.43 PM.png */; };
 		9CDBB680243141860023BBCA /* BiPAP Measurements.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CDBB67F243141860023BBCA /* BiPAP Measurements.png */; };
 		9CDBB682243149970023BBCA /* logo in Resources */ = {isa = PBXBuildFile; fileRef = 9CDBB681243149950023BBCA /* logo */; };
+		9CDBB684243299F40023BBCA /* Cleaning.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CDBB683243299F30023BBCA /* Cleaning.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		9CDBB67D24313C3E0023BBCA /* Screen Shot 2020-03-29 at 4.01.43 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2020-03-29 at 4.01.43 PM.png"; sourceTree = "<group>"; };
 		9CDBB67F243141860023BBCA /* BiPAP Measurements.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BiPAP Measurements.png"; sourceTree = "<group>"; };
 		9CDBB681243149950023BBCA /* logo */ = {isa = PBXFileReference; lastKnownFileType = file; path = logo; sourceTree = "<group>"; };
+		9CDBB683243299F30023BBCA /* Cleaning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cleaning.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				9CDBB67B242EA6470023BBCA /* Lung Chart.png */,
 				9CDBB67D24313C3E0023BBCA /* Screen Shot 2020-03-29 at 4.01.43 PM.png */,
 				9CDBB67F243141860023BBCA /* BiPAP Measurements.png */,
+				9CDBB683243299F30023BBCA /* Cleaning.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -242,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CDBB684243299F40023BBCA /* Cleaning.png in Resources */,
 				9CDBB674242D93CA0023BBCA /* WHO.png in Resources */,
 				9CDBB67A242EA3460023BBCA /* TidalVolume.jpg in Resources */,
 				9CDBB670242D8C430023BBCA /* Handwashing.jpeg in Resources */,

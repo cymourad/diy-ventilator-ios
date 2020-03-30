@@ -424,14 +424,6 @@ then press Play</string>
                                     <outlet property="delegate" destination="8rJ-Kc-sve" id="zxU-0n-Whv"/>
                                 </connections>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9P-l5-VkS">
-                                <rect key="frame" x="153" y="405" width="69" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title="COVID-19 "/>
-                                <connections>
-                                    <segue destination="77d-Kn-y0P" kind="show" id="y1O-QQ-mCV"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcE-v1-Jub">
                                 <rect key="frame" x="93.5" y="483" width="188" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -466,6 +458,22 @@ then press Play</string>
                                 <state key="normal" title="Play"/>
                                 <connections>
                                     <action selector="playButtonTapped:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="VgV-Ds-d1a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sna-4Z-kkx">
+                                <rect key="frame" x="143" y="588" width="88" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Maintenance"/>
+                                <connections>
+                                    <segue destination="pjY-98-iMv" kind="show" id="XK0-oK-8fO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9P-l5-VkS">
+                                <rect key="frame" x="153" y="405" width="69" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="COVID-19 "/>
+                                <connections>
+                                    <segue destination="77d-Kn-y0P" kind="show" id="y1O-QQ-mCV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -761,6 +769,56 @@ Droplets of cough or sneezing from an infected person
             </objects>
             <point key="canvasLocation" x="3064.8000000000002" y="-779.0104947526238"/>
         </scene>
+        <!--Maintenance-->
+        <scene sceneID="eRx-kJ-kBf">
+            <objects>
+                <viewController id="pjY-98-iMv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AoX-HR-cCH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1N-QT-Ocl">
+                                <rect key="frame" x="10" y="278" width="355" height="295"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Examine the following components on a monthly basis for deterioration that may decrease the functionality of the machine: 
+1) Head gear
+2) Mask cushion
+3) Humidifier
+4) Hose 
+For more accurate information, please refer to the instruction manuals of each respective part. 
+
+Determining when to change the mask or other equipment is dependant on many factors including: 
+1) How often the machine is used 
+2) How oily the patient’s skin is 
+3) How often the parts are cleaned 
+
+Note: When cleaning machine, ensure that it has been disconnected from any power source
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cleaning.png" translatesAutoresizingMaskIntoConstraints="NO" id="VKY-CB-b5V">
+                                <rect key="frame" x="18" y="114" width="338" height="156"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="In order to prevent the build-up of dirt, oil and bacteria, it is important to keep all parts of the machine clean" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhg-bW-i2m">
+                                <rect key="frame" x="10" y="59" width="349" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="jtT-a2-V4D"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Maintenance" id="FSl-uK-L6r"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5eM-1Q-VY5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2829.5999999999999" y="500.59970014992507"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -983,7 +1041,7 @@ This causes the pressure inside the lungs to be less than the pressure outside t
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yeE-9y-NHd">
-                                <rect key="frame" x="145" y="243" width="42" height="21"/>
+                                <rect key="frame" x="34" y="80" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -1007,11 +1065,11 @@ This causes the pressure inside the lungs to be less than the pressure outside t
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jk4-AS-xZj">
-                                <rect key="frame" x="0.0" y="44" width="375" height="1407"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jk4-AS-xZj">
+                                <rect key="frame" x="0.0" y="44" width="375" height="1107"/>
                                 <subviews>
-                                    <view alpha="0.94999999999999996" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B6K-W4-565">
-                                        <rect key="frame" x="-8" y="0.0" width="375" height="2249"/>
+                                    <view alpha="0.94999999999999996" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B6K-W4-565">
+                                        <rect key="frame" x="-8" y="0.0" width="375" height="1156"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CPAP (Continous Positive Airway Pressure) " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhQ-C5-UWU">
                                                 <rect key="frame" x="12" y="159" width="358" height="21"/>
@@ -1037,8 +1095,9 @@ Table 1 shows the measurements to input when setting up CPAP mode
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Screen Shot 2020-03-29 at 4.01.43 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="8kb-Xg-FaZ">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2020-03-29 at 4.01.43 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="8kb-Xg-FaZ">
                                                 <rect key="frame" x="12" y="420" width="379" height="147"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BiPAP (Bilateral Positive Airway Pressure) " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7f-qE-nxe">
                                                 <rect key="frame" x="19" y="564" width="345" height="21"/>
@@ -1102,35 +1161,32 @@ If this RR is not maintained by the patient, each breath is automatically machin
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <constraints>
-                                            <constraint firstItem="8kb-Xg-FaZ" firstAttribute="centerX" secondItem="B6K-W4-565" secondAttribute="centerX" id="FyN-dM-XG5"/>
-                                            <constraint firstItem="8kb-Xg-FaZ" firstAttribute="centerX" secondItem="B6K-W4-565" secondAttribute="centerX" id="VLF-5q-Oe7"/>
-                                        </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ch-eE-VZY">
-                                        <rect key="frame" x="2" y="-171" width="42" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="B6K-W4-565" firstAttribute="leading" secondItem="Jk4-AS-xZj" secondAttribute="leading" id="9dE-Mp-9rz"/>
-                                    <constraint firstAttribute="bottom" secondItem="B6K-W4-565" secondAttribute="bottom" id="CXt-rS-lYs"/>
-                                    <constraint firstAttribute="bottom" secondItem="B6K-W4-565" secondAttribute="bottom" constant="-672" id="cYQ-IF-RP0"/>
-                                    <constraint firstItem="B6K-W4-565" firstAttribute="top" secondItem="Jk4-AS-xZj" secondAttribute="top" id="dQp-2u-dsf"/>
-                                    <constraint firstItem="B6K-W4-565" firstAttribute="leading" secondItem="Jk4-AS-xZj" secondAttribute="leading" id="e3T-ql-fkJ"/>
-                                    <constraint firstAttribute="trailing" secondItem="B6K-W4-565" secondAttribute="trailing" id="lWN-X1-Cvx"/>
-                                    <constraint firstItem="B6K-W4-565" firstAttribute="top" secondItem="Jk4-AS-xZj" secondAttribute="top" constant="-15" id="uZk-H2-l9S"/>
-                                    <constraint firstAttribute="trailing" secondItem="B6K-W4-565" secondAttribute="trailing" id="yXi-nF-LWz"/>
+                                    <constraint firstItem="B6K-W4-565" firstAttribute="leading" secondItem="Jk4-AS-xZj" secondAttribute="leading" id="eVh-e0-8IG"/>
+                                    <constraint firstItem="B6K-W4-565" firstAttribute="top" secondItem="Jk4-AS-xZj" secondAttribute="top" id="l5B-40-3GG"/>
+                                    <constraint firstAttribute="bottom" secondItem="B6K-W4-565" secondAttribute="bottom" id="mfP-7D-GYi"/>
+                                    <constraint firstAttribute="trailing" secondItem="B6K-W4-565" secondAttribute="trailing" id="ybv-ec-Th0"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="B6K-W4-565" firstAttribute="bottom" secondItem="eyf-YX-8Zx" secondAttribute="bottom" constant="1142" id="5Fg-Lr-6Ch"/>
+                            <constraint firstItem="B6K-W4-565" firstAttribute="top" secondItem="eyf-YX-8Zx" secondAttribute="top" id="Uub-8c-7lW"/>
+                            <constraint firstItem="B6K-W4-565" firstAttribute="width" secondItem="gWk-47-ZFa" secondAttribute="width" id="X2Z-L7-UbG"/>
+                            <constraint firstItem="Jk4-AS-xZj" firstAttribute="leading" secondItem="eyf-YX-8Zx" secondAttribute="leading" id="hDI-6R-9MJ"/>
+                            <constraint firstItem="Jk4-AS-xZj" firstAttribute="trailing" secondItem="eyf-YX-8Zx" secondAttribute="trailing" id="kcr-bB-qh0"/>
+                            <constraint firstItem="eyf-YX-8Zx" firstAttribute="bottom" secondItem="Jk4-AS-xZj" secondAttribute="bottom" constant="349" id="lMv-bd-9ek"/>
+                            <constraint firstItem="Jk4-AS-xZj" firstAttribute="top" secondItem="eyf-YX-8Zx" secondAttribute="top" id="n0u-gU-vPr"/>
+                            <constraint firstItem="eyf-YX-8Zx" firstAttribute="trailing" secondItem="B6K-W4-565" secondAttribute="trailing" constant="8" id="oaI-VY-zsP"/>
+                            <constraint firstItem="B6K-W4-565" firstAttribute="height" secondItem="gWk-47-ZFa" secondAttribute="height" multiplier="1.87417" id="xgK-TC-ag4"/>
+                            <constraint firstItem="eyf-YX-8Zx" firstAttribute="leading" secondItem="B6K-W4-565" secondAttribute="leading" constant="8" id="zoS-c2-ua6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="eyf-YX-8Zx"/>
                     </view>
-                    <navigationItem key="navigationItem" title="CPAP" id="ehw-nD-bXZ"/>
+                    <navigationItem key="navigationItem" title="Non-invasive positive ventilation" id="ehw-nD-bXZ"/>
                     <size key="freeformSize" width="375" height="1200"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GPS-TW-WX1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1159,6 +1215,7 @@ If this RR is not maintained by the patient, each breath is automatically machin
     </scenes>
     <resources>
         <image name="BiPAP Measurements.png" width="672" height="213"/>
+        <image name="Cleaning.png" width="664" height="249"/>
         <image name="Cough .jpg" width="350" height="233"/>
         <image name="Government.png" width="196" height="69"/>
         <image name="Handwashing.jpeg" width="276" height="183"/>

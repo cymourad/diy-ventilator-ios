@@ -26,6 +26,8 @@
 		9CDBB680243141860023BBCA /* BiPAP Measurements.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CDBB67F243141860023BBCA /* BiPAP Measurements.png */; };
 		9CDBB682243149970023BBCA /* logo in Resources */ = {isa = PBXBuildFile; fileRef = 9CDBB681243149950023BBCA /* logo */; };
 		9CDBB684243299F40023BBCA /* Cleaning.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CDBB683243299F30023BBCA /* Cleaning.png */; };
+		9CDBB6872433EBA60023BBCA /* L-design.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CDBB6852433EBA50023BBCA /* L-design.png */; };
+		9CDBB6882433EBA70023BBCA /* Tutorials.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CDBB6862433EBA60023BBCA /* Tutorials.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		9CDBB67F243141860023BBCA /* BiPAP Measurements.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BiPAP Measurements.png"; sourceTree = "<group>"; };
 		9CDBB681243149950023BBCA /* logo */ = {isa = PBXFileReference; lastKnownFileType = file; path = logo; sourceTree = "<group>"; };
 		9CDBB683243299F30023BBCA /* Cleaning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cleaning.png; sourceTree = "<group>"; };
+		9CDBB6852433EBA50023BBCA /* L-design.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "L-design.png"; sourceTree = "<group>"; };
+		9CDBB6862433EBA60023BBCA /* Tutorials.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tutorials.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 				9CDBB67D24313C3E0023BBCA /* Screen Shot 2020-03-29 at 4.01.43 PM.png */,
 				9CDBB67F243141860023BBCA /* BiPAP Measurements.png */,
 				9CDBB683243299F30023BBCA /* Cleaning.png */,
+				9CDBB6852433EBA50023BBCA /* L-design.png */,
+				9CDBB6862433EBA60023BBCA /* Tutorials.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -252,6 +258,7 @@
 				30B11AA5242722D4008A7AE8 /* LaunchScreen.storyboard in Resources */,
 				9CDBB678242EA17A0023BBCA /* Lungs.png in Resources */,
 				9CDBB67C242EA6470023BBCA /* Lung Chart.png in Resources */,
+				9CDBB6882433EBA70023BBCA /* Tutorials.png in Resources */,
 				9CDBB682243149970023BBCA /* logo in Resources */,
 				9CDBB66E242D6E960023BBCA /* Virus.jpeg in Resources */,
 				30B11AA2242722D4008A7AE8 /* Assets.xcassets in Resources */,
@@ -259,6 +266,7 @@
 				30B11AA0242722CE008A7AE8 /* Main.storyboard in Resources */,
 				9CDBB680243141860023BBCA /* BiPAP Measurements.png in Resources */,
 				9CDBB676242D93DC0023BBCA /* Government.png in Resources */,
+				9CDBB6872433EBA60023BBCA /* L-design.png in Resources */,
 				9CDBB66C242D6CC30023BBCA /* Cough .jpg in Resources */,
 				9CDBB67E24313C3F0023BBCA /* Screen Shot 2020-03-29 at 4.01.43 PM.png in Resources */,
 			);
